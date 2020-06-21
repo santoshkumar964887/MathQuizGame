@@ -1,0 +1,196 @@
+html {
+  color: rgb(216, 214, 214);
+  text-transform: capitalize;
+  height: 100%;
+  background-image: radial-gradient(
+    rgba(138, 162, 190, 0.8),
+    rgb(235, 235, 235),
+    rgba(183, 203, 226, 0.8) 80%
+  );
+}
+#container {
+  width: 580px;
+  height: 490px;
+  background-color: blue;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgb(3, 3, 138);
+}
+#score {
+  display: inline;
+  position: relative;
+  padding: 10px;
+  float: right;
+  background-color: chocolate;
+  border: 1px solid rgb(158, 69, 6);
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px rgb(182, 91, 25);
+}
+#correct {
+  background-color: rgb(19, 133, 19);
+  display: inline;
+  padding: 8px;
+  text-align: center;
+  margin-left: 40%;
+  border: 1px solid rgb(2, 54, 2);
+  border-radius: 3px;
+  box-shadow: 1px 1px 6px rgb(2, 54, 2);
+  visibility: hidden;
+}
+#wrong {
+  background-color: rgb(216, 7, 7);
+  display: inline;
+  padding: 8px 13px;
+  text-align: center;
+  margin-left: 40%;
+  border: 1px solid darkred;
+  border-radius: 3px;
+  box-shadow: 1px 1px 6px darkred;
+  visibility: hidden;
+}
+#questionBox {
+  width: 540px;
+  height: 180px;
+  background-color: chocolate;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -90%);
+  border: 1px solid rgb(158, 69, 6);
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px rgb(182, 91, 25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#question {
+  font-family: cursive "Times New Roman";
+  font-size: 100px;
+  font-weight: 700;
+  padding: 20px;
+  text-align: center;
+  text-align-last: right;
+  text-overflow: auto;
+  word-wrap: break-all;
+}
+#button {
+  width: 540px;
+  height: 50px;
+  background-color: chocolate;
+  margin: auto;
+  margin-top: 260px;
+  border: 1px solid rgb(158, 69, 6);
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px rgb(182, 91, 25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive "Times New Roman";
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-overflow: auto;
+  word-wrap: break-all;
+}
+#optionsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.option {
+  background-color: chocolate;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid rgb(158, 69, 6);
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px rgb(182, 91, 25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive "Times New Roman";
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-overflow: auto;
+  word-wrap: break-all;
+}
+.option:hover {
+  background-color: rgba(158, 69, 6, 0.6);
+  transition: all 1s linear;
+  cursor: pointer;
+}
+#button:hover {
+  background-color: rgba(158, 69, 6, 0.6);
+  transition: all 1s linear;
+  cursor: pointer;
+}
+#startButton {
+  position: relative;
+  clear: both;
+  display: inline;
+  left: 35%;
+  background-color: chocolate;
+  text-align: center;
+  top: 10px;
+
+  margin: 0px auto;
+  padding: 10px 20px;
+  border: 1px solid rgb(158, 69, 6);
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px rgb(182, 91, 25);
+  font-family: cursive "Times New Roman";
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-overflow: auto;
+  word-wrap: break-all;
+  z-index: 10;
+}
+
+#timier {
+  background-color: darkgreen;
+  display: none;
+  padding: 10px;
+  float: right;
+  font-family: cursive "Times New Roman";
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-overflow: auto;
+  word-wrap: break-all;
+  border: 1px solid rgb(1, 66, 1);
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px rgb(1, 66, 1);
+}
+
+#startButton:hover {
+  background-color: rgba(158, 69, 6, 0.6);
+  transition: all 1s linear;
+  cursor: pointer;
+}
+#gameOver {
+  background-color: rgba(92, 0, 0, 0.5);
+  z-index: 50;
+  margin: 20px;
+  width: 500px;
+  height: 220px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-54%, -170%);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive "Times New Roman";
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  text-overflow: auto;
+  word-wrap: break-all;
+  border: 3px solid rgb(158, 69, 6);
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px rgb(182, 91, 25);
+  z-index: 150;
+}
